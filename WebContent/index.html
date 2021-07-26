@@ -1,0 +1,60 @@
+<!--@author: Varun Kashyap -->
+<!-- Description: Welcome Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JHU- Seminar</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
+	<img alt="Johns Hopkins Logo" src="images/jhu.jpeg">
+	<h3>JOHNS HOPKINS ANNUAL SOFTWARE DEVELOPMENT SEMINAR</h3>
+	<br>
+	<form action="mvc_servlet" method="post">
+ 		<fieldset class="fieldset">
+			 <legend class="legend">Contact Information</legend>
+			 <label class="ptext">Name:</label>
+			 <input type="text" name="name" required>
+			 <br>
+			 <label class="ptext">Email:</label>
+			 <input type="email" name="email" required>
+		</fieldset>
+		<br>
+		<fieldset class="fieldset">
+			 <legend class="legend">Select Your Courses</legend>
+			 	<select name="courses" multiple size="6" required>
+  					<option value="A4- Web Services">A4- Web Services</option>
+					<option value="A1- J2EE Design Patterns">A1- J2EE Design Patterns</option>
+					<option value="A3- Service Oriented Architectures">A3- Service Oriented Architectures</option>
+					<option value="A4- Enterprise Service Bus">A4- Enterprise Service Bus</option>
+					<option value="A6- Secure Messaging">A6- Secure Messaging</option>
+					<option value="A5- Web Services Security">A5- Web Services Security</option>
+				</select>
+		</fieldset>
+		<br>
+		<fieldset class="fieldset">
+			 <legend class="legend">Employee Status</legend>
+			 <input type="radio" name="status" value="JHUEmployee" required>
+			 <label for="JHUEmployee" class="ptext">JHU Employee</label>
+			 <input type="radio" name="status" value="JHUStudent">
+			 <label for="JHUStudent" class="ptext">JHU Student</label>
+			 <input type="radio" name="status" value="Speaker">
+			 <label for="Speaker" class="ptext">Speaker</label>
+			 <input type="radio" name="status" value="Other">
+			 <label for="Other" class="ptext">Other</label>
+		</fieldset>
+		<br>
+		<fieldset class="fieldset">
+			 <legend class="legend">Additional Fees and Charges</legend>
+			 <input type="checkbox" name="hotelFee" value="hotelFee">
+			 <label for="hotelFee" class="ptext">Hotel Accommodation (Conferences Guest Special Fee- Parking Included)</label>
+			 <br>
+			 <input type="checkbox" name="parkingFee" value="parkingFee">
+			 <label for="parkingFee" class="ptext">Parking Permit</label>
+		</fieldset>
+		<br>
+		<input type="submit" value="Compute Seminar Costs" name="form">
+</form>
+</body>
+</html>
