@@ -5,7 +5,7 @@ Varun Kashyap
 This java-based web application is a registration system for a software development seminar.
 
 ##Project Status
-In progress. Estimated to be completed by September 1, 2021.
+Completed
 
 ##Roadmap
 Connect to relational database, utilize connection pooling, implement email notification post registration, add SSL.
